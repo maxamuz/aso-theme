@@ -103,6 +103,19 @@ h2 {
 
 /*--- Carousel Home ---*/
 
+.main-slider_slide {
+  width: 100%;
+  height: 511px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.main-slider_slide--vint {
+  background: #0e1e58 url(/wp-content/themes/aco-child/src/img/slider/background-banner-2023.jpg) no-repeat center;
+  background-size: cover;
+}
+
 
 /*--- Menu Navigation ---*/
 
