@@ -1,24 +1,44 @@
 <?php get_header(); ?>
 
-<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="false"
+    data-bs-pause="hover">
     <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
+
             <div class="main-slider_slide main-slider_slide--vint">
-                <img src="https://asobezh-msk.ru/wp-content/themes/aco-child/src/img/slider/xcompressor-collage.png.pagespeed.ic.CxEZCQdSGh.webp" class="d-block" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                <div class="container slider-container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="slider-text">
+                                <p class="h5">Поршневые и винтовые компрессоры АСО - лучшее предложение на российском
+                                    рынке</p>
+                                <a href="/product-category/vintovye-kompressory/"
+                                    class="main-slider_button catalog-button--blue">
+                                    <span class="button-body">Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="img-container">
+                                <img src="https://asobezh-msk.ru/wp-content/themes/aco-child/src/img/slider/xcompressor-collage.png.pagespeed.ic.CxEZCQdSGh.webp"
+                                    class="d-block" alt="...">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
         <div class="carousel-item" data-bs-interval="2000">
             <div class="main-slider_slide main-slider_slide--vint">
-                <img src="https://asobezh-msk.ru/wp-content/themes/aco-child/src/img/slider/xvintovoy.png.pagespeed.ic.z_e06HpYGB.webp" class="d-block" alt="...">
+                <img src="https://asobezh-msk.ru/wp-content/themes/aco-child/src/img/slider/xvintovoy.png.pagespeed.ic.z_e06HpYGB.webp"
+                    class="d-block" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Second slide label</h5>
                     <p>Some representative placeholder content for the second slide.</p>
@@ -27,7 +47,8 @@
         </div>
         <div class="carousel-item">
             <div class="main-slider_slide main-slider_slide--vint">
-                <img src="https://asobezh-msk.ru/wp-content/themes/aco-child/src/img/slider/xporshnevoy.png.pagespeed.ic.H1bXZ0iBlc.webp" class="d-block" alt="...">
+                <img src="https://asobezh-msk.ru/wp-content/themes/aco-child/src/img/slider/xporshnevoy.png.pagespeed.ic.H1bXZ0iBlc.webp"
+                    class="d-block" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Third slide label</h5>
                     <p>Some representative placeholder content for the third slide.</p>
