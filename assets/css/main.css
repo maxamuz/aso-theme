@@ -2,6 +2,10 @@ body {
   font-family: Calibri, sans-serif;
 }
 
+a:visited {
+  color: #ffffff;
+}
+
 h1 {
   font-size: 2rem;
 }
@@ -126,14 +130,51 @@ h2 {
   padding-top: 110px;
 }
 
-.h5 {
+.slider-text-header {
   line-height: 1.1;
   color: #000000;
-  font-size: 35px;
+  font-size: 32px;
   font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.catalog-button--blue {
+  text-decoration: none;
+  background-color: #008bf4;
+  border: 1px solid #008bf4;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  padding: 15px 60px;
+  margin-top: 10px;
+  box-shadow: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 0.9;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-prev:hover {
+  opacity: 1;
 }
 
 /*--- Menu Navigation ---*/
+
+.site-header {
+  background: #ffff;
+  background-size: cover;
+  padding-bottom: 6px;
+}
+
+.main-menu {
+  background-color: #fff;
+  border-bottom: 3px solid #0e1e58;
+}
 
 .main-navigation li {
   /* margin: 0 15px; */
