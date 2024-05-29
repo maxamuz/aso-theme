@@ -48,5 +48,28 @@
     </button>
 </div>
 
+<section class="container-fluid container-background">
+    <section class="container">
+        <div class="row">
+            <div class="col-6">
+                <a href="/product-category/porshnevye-kompressory/" class="group_item group_anime">
+                    <div class="group_item_name">
+                        Поршневые компрессоры
+                        <p>Удобный, доступный и простой источник сжатого воздуха для циклических работ</p>
+                    </div>
+                    <div class="group_item_short-desc"></div>
+                    <div class="group_item_image">
+                        <img
+                            src="https://asobezh-msk.ru/wp-content/themes/aco-child/src/img/cats-on-main/xporsh2.png.pagespeed.ic.tSX51ykQEG.webp">
+                    </div>
+                </a>
+            </div>
+            <div class="col-6">2</div>
+            <div class="col-6">3</div>
+            <div class="col-6">4</div>
+        </div>
+
+    </section>
+</section>
 
 <div class="container"><?php get_footer(); ?></div>
