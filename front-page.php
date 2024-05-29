@@ -52,17 +52,20 @@
     <section class="container">
         <div class="row">
             <div class="col-6">
-                <a href="/product-category/porshnevye-kompressory/" class="group_item group_anime">
-                    <div class="group_item_name">
-                        Поршневые компрессоры
-                        <p>Удобный, доступный и простой источник сжатого воздуха для циклических работ</p>
-                    </div>
-                    <div class="group_item_short-desc"></div>
-                    <div class="group_item_image">
-                        <img
-                            src="https://asobezh-msk.ru/wp-content/themes/aco-child/src/img/cats-on-main/xporsh2.png.pagespeed.ic.tSX51ykQEG.webp">
-                    </div>
-                </a>
+                <div class="group-items">
+                    <a href="/product-category/porshnevye-kompressory/" class="group_item group_anime">
+                        <div class="group_item_name">
+                            Поршневые компрессоры
+                            <p>Удобный, доступный и простой источник сжатого воздуха для циклических работ</p>
+                        </div>
+                        <div class="group_item_short-desc"></div>
+                        <div class="group_item_image">
+                            <img
+                                src="https://asobezh-msk.ru/wp-content/themes/aco-child/src/img/cats-on-main/xporsh2.png.pagespeed.ic.tSX51ykQEG.webp">
+                        </div>
+                    </a>
+                </div>
+
             </div>
             <div class="col-6">2</div>
             <div class="col-6">3</div>
