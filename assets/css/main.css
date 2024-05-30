@@ -130,7 +130,7 @@ h2 {
   padding-top: 110px;
 }
 
-.slider-text-header {
+.text-h5 {
   line-height: 1.1;
   color: #000000;
   font-size: 32px;
@@ -195,6 +195,25 @@ h2 {
   background-color: #f2f2f2;
 }
 
+.section_headline {
+  color: #0e1e58;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 10px;
+}
+
+.section_headline:after {
+  content: "";
+  bottom: -6px;
+  left: 12px;
+  position: absolute;
+  width: 77px;
+  height: 4px;
+  background-color: #008bf4;
+}
+
 group-items {
   display: flex;
   align-items: stretch;
@@ -203,8 +222,7 @@ group-items {
 }
 
 a.group_item {
-  background: #e6e6e6
-    url(/wp-content/themes/aco-child/src/img/xfon_buttom.jpg.pagespeed.ic.oYBNw2iZ2I.webp)
+  background: #e6e6e6 url(/wp-content/themes/aco-child/src/img/fon_buttom.jpg)
     repeat center;
   z-index: 999;
   background-size: cover;
@@ -212,7 +230,6 @@ a.group_item {
   border: 2px solid #000;
   padding: 35px;
   margin-top: 20px;
-  width: 49%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -220,6 +237,30 @@ a.group_item {
   color: #000;
   line-height: 1;
   transition: 500ms;
+}
+
+.group_item_name .text-h5 {
+  text-transform: uppercase;
+  font-size: 27px;
+  margin-bottom: 15px;
+}
+
+p.description-text {
+  font-size: 22px;
+  font-weight: 400;
+  color: #0071d7;
+}
+
+.group_item_image {
+  max-width: 213px;
+  max-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.group_item_image img {
+  width: 800px;
 }
 
 /*---   Media ---*/
