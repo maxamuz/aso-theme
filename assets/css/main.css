@@ -239,6 +239,60 @@ a.group_item {
   transition: 500ms;
 }
 
+.group_item {
+  position: relative;
+  overflow: hidden;
+}
+
+.group_item a:hover {
+  color: #005fa8;
+  text-decoration: underline;
+}
+
+/* a.group_anime::before {
+  position: absolute;
+  z-index: 1;
+  left: -45%;
+  content: "";
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  transform: skewX(-25deg);
+  opacity: 0;
+  width: 25%;
+  height: 100%;
+} */
+
+a.group_anime::before {
+  position: absolute;
+  left: -200px;
+  content: "";
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  width: 20%;
+  height: 100%;
+  transform: skewX(-25deg);
+}
+
+@keyframes slide {
+  0% {
+    left: 100px;
+  }
+
+  100% {
+    left: 550px;
+  }
+}
+
+a.group_anime:hover::before {
+  animation: slide 0.3s;
+}
+
 .group_item_name .text-h5 {
   text-transform: uppercase;
   font-size: 27px;
