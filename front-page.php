@@ -170,5 +170,22 @@
         </div>
     </div>
 </section>
+<section>
+    <div class="container-fluid container-background">
+        <div class="container">
+            <div class="section_headline featured-after">Рекомендуем</div>
+            <div class="row featured-container">
+                <div class="col-lg-3 featured_left">
+                    <div class="featured_left">
+                        <img src="/wp-content/themes/aco-child/src/img/00014.56.15.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-9 featured-right">
+                    2
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <div class="container"><?php get_footer(); ?></div>
