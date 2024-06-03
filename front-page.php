@@ -117,5 +117,43 @@
 
     </section>
 </section>
+<section>
+    <div class="container">
+        <div class="section_headline section-advantage">Бежецкий завод АСО и его преимущества</div>
+        <div class="row section-colums">
+            <div class="col-lg-4 col-md-24 advantage_headline">
+                НАШЕ главное ПРЕИМУЩЕСТВО - ВЕКОВЫЕ ТРАДИЦИИ КАЧЕСТВА!
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 col-xs-12 advantage advantage--1">
+                <div class="advantage_image">
+                    <img src="/wp-content/themes/aco-child/src/img/icon-budgetary.png">
+                </div>
+                <p class="advantage_heading">Бюджетное</p>
+                <p class="advantage_text"> ценообразование</p>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 col-xs-12 advantage advantage--2">
+                <div class="advantage_image">
+                    <img src="/wp-content/themes/aco-child/src/img/icon-life.png">
+                </div>
+                <p class="advantage_heading">Большой срок</p>
+                <p class="advantage_text"> эксплуатации</p>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 col-xs-12 advantage advantage--3">
+                <div class="advantage_image">
+                    <img src="/wp-content/themes/aco-child/src/img/100.png">
+                </div>
+                <p class="advantage_heading">Столетняя традиция</p>
+                <p class="advantage_text"> и инновации</p>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 col-xs-12 advantage advantage--4">
+                <div class="advantage_image">
+                    <img src="/wp-content/themes/aco-child/src/img/icon-quality.png">
+                </div>
+                <p class="advantage_heading">Качество</p>
+                <p class="advantage_text"> подтвержденное сертификатом ISO</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 <div class="container"><?php get_footer(); ?></div>
