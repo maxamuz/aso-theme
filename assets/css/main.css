@@ -398,6 +398,24 @@ p.description-text {
 
 /*--- Block Featured End ---*/
 
+/*--- Block Product Card Start ---*/
+
+.category-page_product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.category-page_product-list .product_block {
+  margin-left: 0;
+  margin-right: 7px;
+  max-width: 290px;
+  margin-bottom: 20px;
+}
+
+/*--- Block Product Card Tnd ---*/
+
 /*---   Media ---*/
 
 @media (min-width: 1260px) {
