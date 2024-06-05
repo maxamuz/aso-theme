@@ -181,7 +181,7 @@
                     </div>
                 </div>
                 <div class="col-lg-9 featured-right">
-                    <?php echo do_shortcode('[products limit="3" columns="3" visibility="featured"]'); ?>
+                    <?php echo do_shortcode('[featured_products limit="3" columns="3"]'); ?>
                 </div>
             </div>
         </div>

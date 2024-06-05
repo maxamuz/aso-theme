@@ -24,7 +24,7 @@ if (empty($product) || !$product->is_visible()) {
 	return;
 }
 ?>
-<div class="product_block" <?php wc_product_class('', $product); ?>>
+<div <?php wc_product_class('product_block', $product); ?>>
 	<?php
 	/**
 	 * Hook: woocommerce_before_shop_loop_item.

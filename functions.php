@@ -164,6 +164,35 @@ function aso_theme_scripts()
 }
 add_action('wp_enqueue_scripts', 'aso_theme_scripts');
 
+remove_action('woocommerce_before_shop_loop_item', 'woocommerce_template_loop_product_link_open', 10);
+add_action('woocommerce_before_shop_loop_item', 'woocommerce_template_loop_product_link_open', 10);
+
+function woocommerce_template_loop_product_link_open()
+{
+	global $product;
+
+	$link = apply_filters('woocommerce_loop_product_link', get_the_permalink(), $product);
+
+	echo '<a href="' . esc_url($link) . '" class="product_block_image woocommerce-LoopProduct-link woocommerce-loop-product__link">';
+}
+
+remove_action('woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10);
+
+add_action('woocommerce_before_shop_loop_item_title', 'add_woocommerce_template_loop_product_thumbnail', 10);
+
+function add_woocommerce_template_loop_product_thumbnail()
+{
+	echo get_the_post_thumbnail();
+}
+
+remove_action('woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 10);
+add_action('woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 10);
+
+function woocommerce_template_loop_product_title()
+{
+	echo the_title('<a href="/product/kompressor-aso-vk-37-8-2/" class="product_block_name">', '</a>');
+}
+
 /**
  * Implement the Custom Header feature.
  */
