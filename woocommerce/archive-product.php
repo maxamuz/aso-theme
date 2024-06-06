@@ -31,7 +31,7 @@ do_action('woocommerce_before_main_content');
 ?>
 <div class="container-fluid">
 	<div class="row category-page">
-		<div class="col-lg-3 category-page_left">Категории</div>
+		<div class="col-lg-3 category-page_left">Категории<?php do_action('woocommerce_sidebar'); ?></div>
 		<div class="col-lg-9 category-page_right">
 			<header class="woocommerce-products-header">
 				<?php if (apply_filters('woocommerce_show_page_title', true)): ?>

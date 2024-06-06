@@ -3,7 +3,7 @@ body {
 }
 
 a:visited {
-  color: #ffffff;
+  color: #0e1e58;
 }
 
 h1 {
@@ -388,12 +388,21 @@ p.description-text {
 
 /*--- Block Featured Start ---*/
 
-.featured-after {
-  margin-bottom: 20px;
+.featured-container {
+  display: flex;
 }
 
-.featured-after::after {
-  left: 0;
+.featured_left {
+  margin-right: 15px;
+  margin-left: -10px;
+}
+
+.featured_left img {
+  width: 275px;
+}
+
+.featured-right {
+  max-width: 844px;
 }
 
 /*--- Block Featured End ---*/
@@ -423,7 +432,6 @@ main {
 .category-page_product-list .product_block {
   margin-left: 0;
   margin-right: 7px;
-  max-width: 290px;
   margin-bottom: 20px;
 }
 
@@ -445,7 +453,6 @@ main {
 }
 
 .product_block_image {
-  height: 192px;
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
@@ -455,9 +462,11 @@ main {
 .product_block_image img {
   width: 268px;
   height: 268px;
+  margin-bottom: 30px;
 }
 
 .product_block_name {
+  display: block;
   font-family: "Myriad Pro bold", sans-serif;
   font-size: 15px;
   font-weight: bold;
@@ -466,14 +475,122 @@ main {
   color: #0e1e58;
   padding-left: 10px;
   padding-right: 10px;
+  height: 35px;
+  padding: revert-layer;
 }
 
-.product_block > * {
+.price {
+  margin-bottom: 50px;
+}
+
+.product_block_props {
+  list-style-type: none;
+  text-align: left;
+  margin-left: 0;
+  padding-left: 12px;
+  padding-top: 12px;
+}
+
+.product_block_price {
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.price_value {
   margin-bottom: 15px;
 }
 
-.product_block_name:visited {
-  color: #0e1e58;
+.product_block_price .price_value {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+.product_block_price .actual_price {
+  color: #000000;
+  font-size: 18px;
+}
+
+.price_value .no_price {
+  color: #ff9900;
+  font-size: 21px;
+  margin-left: 23px;
+}
+
+.product_block_get-discount {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  text-decoration: none;
+  font-family: "Calibri", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+  width: 137px;
+  height: 31px;
+  color: #000000;
+  cursor: pointer;
+}
+
+.product_block_get-discount .button-body {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ff9900;
+  background-color: #fefefe;
+  flex: 1 1 100%;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.15s, border 0.15s;
+}
+
+.product_block_button {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  text-decoration: none;
+  font-family: "Calibri", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+  height: 45px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.product_block_button .button-icon--left {
+  flex: 0 0 45px;
+  background-color: #008bf4;
+  color: #ffffff;
+  transition: background-color 0.15s, color 0.15s;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.br-white {
+  border-right: 1px solid #ffffff;
+}
+
+.product_block_button .button-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 100%;
+  border: 1px solid #008bf4;
+  background-color: #008bf4;
 }
 
 /*--- Block Product Card End ---*/

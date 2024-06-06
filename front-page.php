@@ -174,18 +174,346 @@
     <div class="container-fluid container-background">
         <div class="container">
             <div class="section_headline featured-after">Рекомендуем</div>
-            <div class="row featured-container">
-                <div class="col-lg-3 featured_left">
-                    <div class="featured_left">
-                        <img src="/wp-content/themes/aco-child/src/img/00014.56.15.jpg">
-                    </div>
+            <div class="featured-container">
+                <div class="featured_left">
+                    <img src="/wp-content/themes/aco-child/src/img/00014.56.15.jpg">
                 </div>
-                <div class="col-lg-9 featured-right">
-                    <?php echo do_shortcode('[featured_products limit="3" columns="3"]'); ?>
+                <div class="featured-right">
+
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-interval="false"
+                        data-bs-pause="hover">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+
+                        <div class="carousel-inner"><!--The Carousel Container-->
+
+                            <div class="carousel-item carousel-item-1 active"><!--The Carousel item 1-->
+                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                                    <div class="col">
+                                        <div class="card shadow-sm mx-8 my-5">
+                                            <small class="text-bg-warning px-5 rounded text-bg-light new">new</small>
+                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                                xmlns="http://www.w3.org/2000/svg" role="img"
+                                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                                focusable="false">
+                                                <image
+                                                    href="https://source.unsplash.com/unpaired-red-nike-sneaker-164_6wVEHfI"
+                                                    height="100%" width="100%" />
+                                            </svg>
+                                            <div class="card-body">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-regular fa-star text-warning"></i>
+                                                <p class="card-text">Nike</p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-outline-warning">View</button>
+                                                        <button type="button" class="btn btn-sm btn-outline-warning"><i
+                                                                class="fa-solid fa-cart-shopping"></i></button>
+                                                    </div>
+                                                    <small class="text-bg-warning px-2 rounded">$800.00</small>
+                                                </div>
+
+                                            </div>
+                                        </div><!--[end of card]-->
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="card shadow-sm mx-8 my-5">
+                                            <small class="text-bg-warning px-5 rounded text-bg-light new">new</small>
+                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                                xmlns="http://www.w3.org/2000/svg" role="img"
+                                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                                focusable="false">
+                                                <image
+                                                    href="https://source.unsplash.com/white-adidas-low-top-sneakers-JM-qKEd1GMI"
+                                                    height="100%" width="100%" />
+                                            </svg>
+                                            <div class="card-body">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-regular fa-star text-warning"></i>
+                                                <i class="fa-regular fa-star text-warning"></i>
+                                                <p class="card-text">Adidas</p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-outline-warning">View</button>
+                                                        <button type="button" class="btn btn-sm btn-outline-warning"><i
+                                                                class="fa-solid fa-cart-shopping"></i></button>
+                                                    </div>
+                                                    <small class="text-bg-warning px-2 rounded">$600.00</small>
+                                                </div>
+                                            </div>
+                                        </div><!--[end of card]-->
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="card shadow-sm mx-8 my-5">
+                                            <small class="text-bg-warning px-5 rounded text-bg-light new">new</small>
+                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                                xmlns="http://www.w3.org/2000/svg" role="img"
+                                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                                focusable="false">
+                                                <image
+                                                    href="https://source.unsplash.com/white-and-black-nike-air-force-1-low-XZ3EmAIWuz0"
+                                                    height="100%" width="100%" />
+                                            </svg>
+                                            <div class="card-body">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-regular fa-star text-warning"></i>
+                                                <i class="fa-regular fa-star text-warning"></i>
+                                                <i class="fa-regular fa-star text-warning"></i>
+                                                <i class="fa-regular fa-star text-warning"></i>
+                                                <p class="card-text">Slat Sole Show</p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-outline-warning">View</button>
+                                                        <button type="button" class="btn btn-sm btn-outline-warning"><i
+                                                                class="fa-solid fa-cart-shopping"></i></button>
+                                                    </div>
+                                                    <small class="text-bg-warning px-2 rounded">$500.00</small>
+                                                </div>
+
+                                            </div>
+                                        </div><!--[end of card]-->
+                                    </div>
+                                </div><!--[End of Carousel Item 1]-->
+                            </div>
+
+                            <!-- Carousel Item 2 -->
+                            <div class="carousel-item carousel-item-2">
+                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                                    <div class="col">
+                                        <div class="card shadow-sm mx-8 my-5">
+                                            <small class="text-bg-warning px-5 rounded text-bg-light new">new</small>
+                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                                xmlns="http://www.w3.org/2000/svg" role="img"
+                                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                                focusable="false">
+                                                <image
+                                                    href="https://source.unsplash.com/flatlay-photography-of-wireless-headphones-PDX_a_82obo"
+                                                    height="100%" width="100%" />
+                                            </svg>
+                                            <div class="card-body">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-regular fa-star text-warning"></i>
+                                                <i class="fa-regular fa-star text-warning"></i>
+                                                <i class="fa-regular fa-star text-warning"></i>
+                                                <p class="card-text">Black Glass Headset</p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-outline-warning">View</button>
+                                                        <button type="button" class="btn btn-sm btn-outline-warning"><i
+                                                                class="fa-solid fa-cart-shopping"></i></button>
+                                                    </div>
+                                                    <small class="text-bg-warning px-2 rounded">$200.00</small>
+                                                </div>
+
+                                            </div>
+                                        </div><!--[end of card]-->
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="card shadow-sm mx-8 my-5">
+                                            <small class="text-bg-warning px-5 rounded text-bg-light new">new</small>
+                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                                xmlns="http://www.w3.org/2000/svg" role="img"
+                                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                                focusable="false">
+                                                <image
+                                                    href="https://source.unsplash.com/gray-and-brown-corded-headphones-GI6L2pkiZgQ"
+                                                    height="100%" width="100%" />
+                                            </svg>
+                                            <div class="card-body">
+                                                <i class="fa-regular fa-star text-warning"></i>
+                                                <i class="fa-regular fa-star text-warning"></i>
+                                                <i class="fa-regular fa-star text-warning"></i>
+                                                <i class="fa-regular fa-star text-warning"></i>
+                                                <i class="fa-regular fa-star text-warning"></i>
+                                                <p class="card-text">Nano Stripe Headset</p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-outline-warning">View</button>
+                                                        <button type="button" class="btn btn-sm btn-outline-warning"><i
+                                                                class="fa-solid fa-cart-shopping"></i></button>
+                                                    </div>
+                                                    <small class="text-bg-warning px-2 rounded">$300.00</small>
+                                                </div>
+
+                                            </div>
+                                        </div><!--[end of card]-->
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="card shadow-sm mx-8 my-5">
+                                            <small class="text-bg-warning px-5 rounded text-bg-light new">new</small>
+                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                                xmlns="http://www.w3.org/2000/svg" role="img"
+                                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                                focusable="false">
+                                                <image
+                                                    href="https://source.unsplash.com/black-and-silver-sony-headphones-aiWjNA46Urc"
+                                                    height="100%" width="100%" />
+                                            </svg>
+                                            <div class="card-body">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-regular fa-star text-warning"></i>
+                                                <i class="fa-regular fa-star text-warning"></i>
+                                                <p class="card-text">Steelseries</p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-outline-warning">View</button>
+                                                        <button type="button" class="btn btn-sm btn-outline-warning"><i
+                                                                class="fa-solid fa-cart-shopping"></i></button>
+                                                    </div>
+                                                    <small class="text-bg-warning px-2 rounded">$500.00</small>
+                                                </div>
+                                            </div>
+                                        </div><!--[end of card]-->
+                                    </div>
+                                </div>
+                            </div> <!--[carousel-item-2]-->
+
+                            <!-- Carousel Item 3 -->
+                            <div class="carousel-item carousel-item-2">
+                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                                    <div class="col">
+                                        <div class="card shadow-sm mx-8 my-5">
+                                            <small class="text-bg-warning px-5 rounded text-bg-light new">new</small>
+                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                                xmlns="http://www.w3.org/2000/svg" role="img"
+                                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                                focusable="false">
+                                                <image
+                                                    href="https://source.unsplash.com/space-gray-iphone-x-with-box-K1MxhTd6SKo"
+                                                    height="100%" width="100%" />
+                                            </svg>
+                                            <div class="card-body">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <p class="card-text">iPhone 15</p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-outline-warning">View</button>
+                                                        <button type="button" class="btn btn-sm btn-outline-warning"><i
+                                                                class="fa-solid fa-cart-shopping"></i></button>
+                                                    </div>
+                                                    <small class="text-bg-warning px-2 rounded">$2000.00</small>
+                                                </div>
+
+                                            </div>
+                                        </div><!--[end of card]-->
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="card shadow-sm mx-8 my-5">
+                                            <small class="text-bg-warning px-5 rounded text-bg-light new">new</small>
+                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                                xmlns="http://www.w3.org/2000/svg" role="img"
+                                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                                focusable="false">
+                                                <image
+                                                    href="https://source.unsplash.com/silver-iphone-6-on-silver-macbook-gQ6NlDvRngU"
+                                                    height="100%" width="100%" />
+                                            </svg>
+                                            <div class="card-body">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-regular fa-star text-warning"></i>
+                                                <i class="fa-regular fa-star text-warning"></i>
+                                                <i class="fa-regular fa-star text-warning"></i>
+                                                <p class="card-text">iPhone 14 Pro Max</p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-outline-warning">View</button>
+                                                        <button type="button" class="btn btn-sm btn-outline-warning"><i
+                                                                class="fa-solid fa-cart-shopping"></i></button>
+                                                    </div>
+                                                    <small class="text-bg-warning px-2 rounded">$1500.00</small>
+                                                </div>
+
+                                            </div>
+                                        </div><!--[end of card]-->
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="card shadow-sm mx-8 my-5">
+                                            <small class="text-bg-warning px-5 rounded text-bg-light new">new</small>
+                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                                xmlns="http://www.w3.org/2000/svg" role="img"
+                                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                                focusable="false">
+                                                <image
+                                                    href="https://source.unsplash.com/black-iphone-7-with-white-and-black-dice-YLNMXzXk8zs"
+                                                    height="100%" width="100%" />
+                                            </svg>
+                                            <div class="card-body">
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-regular fa-star text-warning"></i>
+                                                <i class="fa-regular fa-star text-warning"></i>
+                                                <p class="card-text">iPhone 14</p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-outline-warning">View</button>
+                                                        <button type="button" class="btn btn-sm btn-outline-warning"><i
+                                                                class="fa-solid fa-cart-shopping"></i></button>
+                                                    </div>
+                                                    <small class="text-bg-warning px-2 rounded">$1200.00</small>
+                                                </div>
+                                            </div>
+                                        </div><!--[end of card]-->
+                                    </div>
+                                </div>
+                            </div> <!--[carousel-item-3]-->
+                        </div><!--[End of Container]-->
+
+                        <div class="control-btn">
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                                <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
+                                <i class="fa-solid fa-arrow-left"></i>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </div>
 </section>
 
 <div class="container"><?php get_footer(); ?></div>

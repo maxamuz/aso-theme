@@ -190,8 +190,24 @@ add_action('woocommerce_shop_loop_item_title', 'woocommerce_template_loop_produc
 
 function woocommerce_template_loop_product_title()
 {
-	echo the_title('<a href="/product/kompressor-aso-vk-37-8-2/" class="product_block_name">', '</a>');
+	echo the_title('<span href="/product/kompressor-aso-vk-37-8-2/" class="product_block_name">', '</span>');
 }
+
+remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
+
+add_action('woocommerce_after_shop_loop_item_title', 'woocommerce_product_block_props', 7);
+
+function woocommerce_product_block_props()
+{
+	echo '<ul class="product_block_props">
+	<li>Производительность: 6.5 м³/мин</li
+	<li>Давление: 8 бар</li>
+	<li>Мощность: 37 кВт</li>	
+    </ul>';
+}
+
+remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10);
+
 
 /**
  * Implement the Custom Header feature.
