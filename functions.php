@@ -164,6 +164,10 @@ function aso_theme_scripts()
 }
 add_action('wp_enqueue_scripts', 'aso_theme_scripts');
 
+/**
+ * Изменеие Вывода Ссылки Карточки Товара.
+ */
+
 remove_action('woocommerce_before_shop_loop_item', 'woocommerce_template_loop_product_link_open', 10);
 add_action('woocommerce_before_shop_loop_item', 'woocommerce_template_loop_product_link_open', 10);
 
@@ -176,8 +180,11 @@ function woocommerce_template_loop_product_link_open()
 	echo '<a href="' . esc_url($link) . '" class="product_block_image woocommerce-LoopProduct-link woocommerce-loop-product__link">';
 }
 
-remove_action('woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10);
+/**
+ * Вывод Миниатюры Карточки Товара.
+ */
 
+remove_action('woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10);
 add_action('woocommerce_before_shop_loop_item_title', 'add_woocommerce_template_loop_product_thumbnail', 10);
 
 function add_woocommerce_template_loop_product_thumbnail()
@@ -194,6 +201,10 @@ function woocommerce_template_loop_product_title()
 }
 
 remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
+
+/**
+ * Вывод Характеристик В Карточке товара.
+ */
 
 add_action('woocommerce_after_shop_loop_item_title', 'woocommerce_product_block_props', 7);
 
