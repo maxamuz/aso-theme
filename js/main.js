@@ -11,7 +11,7 @@ jQuery(document).ready(function () {
     jQuery("#carouselExampleControls .carousel-control-next").on(
       "click",
       function () {
-        if (scrollPosition < carouselWidth - cardWidth * 3) {
+        if (scrollPosition < carouselWidth - cardWidth * 1) {
           scrollPosition += cardWidth;
           jQuery("#carouselExampleControls .carousel-inner").animate(
             { scrollLeft: scrollPosition },

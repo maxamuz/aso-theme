@@ -291,6 +291,42 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="img-wrapper"><img
+                                            src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-1-card-2.jpg"
+                                            class="d-block w-100" alt="..."> </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 7</h5>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <p class="card-text">"Some dummy text you don't need to read.
+                                            Since you have decided to read, do like, share, comment and
+                                            subscribe to Coding Yaar."</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="img-wrapper"><img
+                                            src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-1-card-2.jpg"
+                                            class="d-block w-100" alt="..."> </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 8</h5>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <p class="card-text">"Some dummy text you don't need to read.
+                                            Since you have decided to read, do like, share, comment and
+                                            subscribe to Coding Yaar."</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
 
