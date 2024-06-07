@@ -390,6 +390,7 @@ p.description-text {
 
 .featured-container {
   display: flex;
+  padding-bottom: 40px;
 }
 
 .featured_left {
@@ -404,6 +405,52 @@ p.description-text {
 .featured-right {
   max-width: 844px;
 }
+
+/* --- Featured Slider Start --- */
+
+#carouselExampleControls .card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+  height: 100%;
+}
+#carouselExampleControls .carousel-control-prev,
+#carouselExampleControls .carousel-control-next {
+  background-color: #fff;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  top: 60%;
+  transform: translateY(-50%);
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+}
+@media (min-width: 576px) {
+  #carouselExampleControls .carousel-item {
+    margin-right: 0;
+    flex: 0 0 33.3%;
+    display: block;
+  }
+  #carouselExampleControls .carousel-inner {
+    display: flex;
+  }
+}
+@media (min-width: 768px) {
+  #carouselExampleControls .carousel-control-prev,
+  #carouselExampleControls .carousel-control-next {
+    width: 3em;
+    height: 3em;
+    position: absolute;
+    left: 23em;
+    top: 110%;
+    opacity: 1;
+  }
+  #carouselExampleControls .carousel-control-next {
+    left: 27em;
+  }
+}
+
+/* --- Featured Slider End --- */
 
 /*--- Block Featured End ---*/
 

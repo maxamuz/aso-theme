@@ -180,340 +180,138 @@
                 </div>
                 <div class="featured-right">
 
-                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-interval="false"
-                        data-bs-pause="hover">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                        </div>
+                    <div id="carouselExampleControls" class="carousel carousel-dark" data-bs-ride="carousel">
 
-                        <div class="carousel-inner"><!--The Carousel Container-->
-
-                            <div class="carousel-item carousel-item-1 active"><!--The Carousel item 1-->
-                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                                    <div class="col">
-                                        <div class="card shadow-sm mx-8 my-5">
-                                            <small class="text-bg-warning px-5 rounded text-bg-light new">new</small>
-                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                                xmlns="http://www.w3.org/2000/svg" role="img"
-                                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                                                focusable="false">
-                                                <image
-                                                    href="https://source.unsplash.com/unpaired-red-nike-sneaker-164_6wVEHfI"
-                                                    height="100%" width="100%" />
-                                            </svg>
-                                            <div class="card-body">
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-regular fa-star text-warning"></i>
-                                                <p class="card-text">Nike</p>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group">
-                                                        <button type="button"
-                                                            class="btn btn-sm btn-outline-warning">View</button>
-                                                        <button type="button" class="btn btn-sm btn-outline-warning"><i
-                                                                class="fa-solid fa-cart-shopping"></i></button>
-                                                    </div>
-                                                    <small class="text-bg-warning px-2 rounded">$800.00</small>
-                                                </div>
-
-                                            </div>
-                                        </div><!--[end of card]-->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card">
+                                    <div class="img-wrapper"><img
+                                            src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-1-card-2.jpg"
+                                            class="d-block w-100" alt="..."> </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 1</h5>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <p class="card-text">"Some dummy text you don't need to read.
+                                            Since you have decided to read, do like, share, comment and
+                                            subscribe to Coding Yaar."</p>
                                     </div>
-
-                                    <div class="col">
-                                        <div class="card shadow-sm mx-8 my-5">
-                                            <small class="text-bg-warning px-5 rounded text-bg-light new">new</small>
-                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                                xmlns="http://www.w3.org/2000/svg" role="img"
-                                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                                                focusable="false">
-                                                <image
-                                                    href="https://source.unsplash.com/white-adidas-low-top-sneakers-JM-qKEd1GMI"
-                                                    height="100%" width="100%" />
-                                            </svg>
-                                            <div class="card-body">
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-regular fa-star text-warning"></i>
-                                                <i class="fa-regular fa-star text-warning"></i>
-                                                <p class="card-text">Adidas</p>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group">
-                                                        <button type="button"
-                                                            class="btn btn-sm btn-outline-warning">View</button>
-                                                        <button type="button" class="btn btn-sm btn-outline-warning"><i
-                                                                class="fa-solid fa-cart-shopping"></i></button>
-                                                    </div>
-                                                    <small class="text-bg-warning px-2 rounded">$600.00</small>
-                                                </div>
-                                            </div>
-                                        </div><!--[end of card]-->
-                                    </div>
-
-                                    <div class="col">
-                                        <div class="card shadow-sm mx-8 my-5">
-                                            <small class="text-bg-warning px-5 rounded text-bg-light new">new</small>
-                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                                xmlns="http://www.w3.org/2000/svg" role="img"
-                                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                                                focusable="false">
-                                                <image
-                                                    href="https://source.unsplash.com/white-and-black-nike-air-force-1-low-XZ3EmAIWuz0"
-                                                    height="100%" width="100%" />
-                                            </svg>
-                                            <div class="card-body">
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-regular fa-star text-warning"></i>
-                                                <i class="fa-regular fa-star text-warning"></i>
-                                                <i class="fa-regular fa-star text-warning"></i>
-                                                <i class="fa-regular fa-star text-warning"></i>
-                                                <p class="card-text">Slat Sole Show</p>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group">
-                                                        <button type="button"
-                                                            class="btn btn-sm btn-outline-warning">View</button>
-                                                        <button type="button" class="btn btn-sm btn-outline-warning"><i
-                                                                class="fa-solid fa-cart-shopping"></i></button>
-                                                    </div>
-                                                    <small class="text-bg-warning px-2 rounded">$500.00</small>
-                                                </div>
-
-                                            </div>
-                                        </div><!--[end of card]-->
-                                    </div>
-                                </div><!--[End of Carousel Item 1]-->
+                                </div>
                             </div>
-
-                            <!-- Carousel Item 2 -->
-                            <div class="carousel-item carousel-item-2">
-                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                                    <div class="col">
-                                        <div class="card shadow-sm mx-8 my-5">
-                                            <small class="text-bg-warning px-5 rounded text-bg-light new">new</small>
-                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                                xmlns="http://www.w3.org/2000/svg" role="img"
-                                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                                                focusable="false">
-                                                <image
-                                                    href="https://source.unsplash.com/flatlay-photography-of-wireless-headphones-PDX_a_82obo"
-                                                    height="100%" width="100%" />
-                                            </svg>
-                                            <div class="card-body">
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-regular fa-star text-warning"></i>
-                                                <i class="fa-regular fa-star text-warning"></i>
-                                                <i class="fa-regular fa-star text-warning"></i>
-                                                <p class="card-text">Black Glass Headset</p>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group">
-                                                        <button type="button"
-                                                            class="btn btn-sm btn-outline-warning">View</button>
-                                                        <button type="button" class="btn btn-sm btn-outline-warning"><i
-                                                                class="fa-solid fa-cart-shopping"></i></button>
-                                                    </div>
-                                                    <small class="text-bg-warning px-2 rounded">$200.00</small>
-                                                </div>
-
-                                            </div>
-                                        </div><!--[end of card]-->
-                                    </div>
-
-                                    <div class="col">
-                                        <div class="card shadow-sm mx-8 my-5">
-                                            <small class="text-bg-warning px-5 rounded text-bg-light new">new</small>
-                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                                xmlns="http://www.w3.org/2000/svg" role="img"
-                                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                                                focusable="false">
-                                                <image
-                                                    href="https://source.unsplash.com/gray-and-brown-corded-headphones-GI6L2pkiZgQ"
-                                                    height="100%" width="100%" />
-                                            </svg>
-                                            <div class="card-body">
-                                                <i class="fa-regular fa-star text-warning"></i>
-                                                <i class="fa-regular fa-star text-warning"></i>
-                                                <i class="fa-regular fa-star text-warning"></i>
-                                                <i class="fa-regular fa-star text-warning"></i>
-                                                <i class="fa-regular fa-star text-warning"></i>
-                                                <p class="card-text">Nano Stripe Headset</p>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group">
-                                                        <button type="button"
-                                                            class="btn btn-sm btn-outline-warning">View</button>
-                                                        <button type="button" class="btn btn-sm btn-outline-warning"><i
-                                                                class="fa-solid fa-cart-shopping"></i></button>
-                                                    </div>
-                                                    <small class="text-bg-warning px-2 rounded">$300.00</small>
-                                                </div>
-
-                                            </div>
-                                        </div><!--[end of card]-->
-                                    </div>
-
-                                    <div class="col">
-                                        <div class="card shadow-sm mx-8 my-5">
-                                            <small class="text-bg-warning px-5 rounded text-bg-light new">new</small>
-                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                                xmlns="http://www.w3.org/2000/svg" role="img"
-                                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                                                focusable="false">
-                                                <image
-                                                    href="https://source.unsplash.com/black-and-silver-sony-headphones-aiWjNA46Urc"
-                                                    height="100%" width="100%" />
-                                            </svg>
-                                            <div class="card-body">
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-regular fa-star text-warning"></i>
-                                                <i class="fa-regular fa-star text-warning"></i>
-                                                <p class="card-text">Steelseries</p>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group">
-                                                        <button type="button"
-                                                            class="btn btn-sm btn-outline-warning">View</button>
-                                                        <button type="button" class="btn btn-sm btn-outline-warning"><i
-                                                                class="fa-solid fa-cart-shopping"></i></button>
-                                                    </div>
-                                                    <small class="text-bg-warning px-2 rounded">$500.00</small>
-                                                </div>
-                                            </div>
-                                        </div><!--[end of card]-->
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="img-wrapper"><img
+                                            src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-1-card-2.jpg"
+                                            class="d-block w-100" alt="..."> </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 2</h5>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <p class="card-text">"Some dummy text you don't need to read.
+                                            Since you have decided to read, do like, share, comment and
+                                            subscribe to Coding Yaar."</p>
                                     </div>
                                 </div>
-                            </div> <!--[carousel-item-2]-->
-
-                            <!-- Carousel Item 3 -->
-                            <div class="carousel-item carousel-item-2">
-                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                                    <div class="col">
-                                        <div class="card shadow-sm mx-8 my-5">
-                                            <small class="text-bg-warning px-5 rounded text-bg-light new">new</small>
-                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                                xmlns="http://www.w3.org/2000/svg" role="img"
-                                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                                                focusable="false">
-                                                <image
-                                                    href="https://source.unsplash.com/space-gray-iphone-x-with-box-K1MxhTd6SKo"
-                                                    height="100%" width="100%" />
-                                            </svg>
-                                            <div class="card-body">
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <p class="card-text">iPhone 15</p>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group">
-                                                        <button type="button"
-                                                            class="btn btn-sm btn-outline-warning">View</button>
-                                                        <button type="button" class="btn btn-sm btn-outline-warning"><i
-                                                                class="fa-solid fa-cart-shopping"></i></button>
-                                                    </div>
-                                                    <small class="text-bg-warning px-2 rounded">$2000.00</small>
-                                                </div>
-
-                                            </div>
-                                        </div><!--[end of card]-->
-                                    </div>
-
-                                    <div class="col">
-                                        <div class="card shadow-sm mx-8 my-5">
-                                            <small class="text-bg-warning px-5 rounded text-bg-light new">new</small>
-                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                                xmlns="http://www.w3.org/2000/svg" role="img"
-                                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                                                focusable="false">
-                                                <image
-                                                    href="https://source.unsplash.com/silver-iphone-6-on-silver-macbook-gQ6NlDvRngU"
-                                                    height="100%" width="100%" />
-                                            </svg>
-                                            <div class="card-body">
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-regular fa-star text-warning"></i>
-                                                <i class="fa-regular fa-star text-warning"></i>
-                                                <i class="fa-regular fa-star text-warning"></i>
-                                                <p class="card-text">iPhone 14 Pro Max</p>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group">
-                                                        <button type="button"
-                                                            class="btn btn-sm btn-outline-warning">View</button>
-                                                        <button type="button" class="btn btn-sm btn-outline-warning"><i
-                                                                class="fa-solid fa-cart-shopping"></i></button>
-                                                    </div>
-                                                    <small class="text-bg-warning px-2 rounded">$1500.00</small>
-                                                </div>
-
-                                            </div>
-                                        </div><!--[end of card]-->
-                                    </div>
-
-                                    <div class="col">
-                                        <div class="card shadow-sm mx-8 my-5">
-                                            <small class="text-bg-warning px-5 rounded text-bg-light new">new</small>
-                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                                xmlns="http://www.w3.org/2000/svg" role="img"
-                                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                                                focusable="false">
-                                                <image
-                                                    href="https://source.unsplash.com/black-iphone-7-with-white-and-black-dice-YLNMXzXk8zs"
-                                                    height="100%" width="100%" />
-                                            </svg>
-                                            <div class="card-body">
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-regular fa-star text-warning"></i>
-                                                <i class="fa-regular fa-star text-warning"></i>
-                                                <p class="card-text">iPhone 14</p>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group">
-                                                        <button type="button"
-                                                            class="btn btn-sm btn-outline-warning">View</button>
-                                                        <button type="button" class="btn btn-sm btn-outline-warning"><i
-                                                                class="fa-solid fa-cart-shopping"></i></button>
-                                                    </div>
-                                                    <small class="text-bg-warning px-2 rounded">$1200.00</small>
-                                                </div>
-                                            </div>
-                                        </div><!--[end of card]-->
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="img-wrapper"><img
+                                            src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-1-card-2.jpg"
+                                            class="d-block w-100" alt="..."> </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 3</h5>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <p class="card-text">"Some dummy text you don't need to read.
+                                            Since you have decided to read, do like, share, comment and
+                                            subscribe to Coding Yaar."</p>
                                     </div>
                                 </div>
-                            </div> <!--[carousel-item-3]-->
-                        </div><!--[End of Container]-->
-
-                        <div class="control-btn">
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                                <i class="fa-solid fa-arrow-right"></i>
-
-                                <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-
-                            <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
-                                <i class="fa-solid fa-arrow-left"></i>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="img-wrapper"><img
+                                            src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-1-card-2.jpg"
+                                            class="d-block w-100" alt="..."> </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 4</h5>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <p class="card-text">"Some dummy text you don't need to read.
+                                            Since you have decided to read, do like, share, comment and
+                                            subscribe to Coding Yaar."</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="img-wrapper"><img
+                                            src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-1-card-2.jpg"
+                                            class="d-block w-100" alt="..."> </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 5</h5>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <p class="card-text">"Some dummy text you don't need to read.
+                                            Since you have decided to read, do like, share, comment and
+                                            subscribe to Coding Yaar."</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="img-wrapper"><img
+                                            src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-1-card-2.jpg"
+                                            class="d-block w-100" alt="..."> </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 6</h5>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <p class="card-text">"Some dummy text you don't need to read.
+                                            Since you have decided to read, do like, share, comment and
+                                            subscribe to Coding Yaar."</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+
+
+
+
                     </div>
 
                 </div>
             </div>
-        </div>
 </section>
 
 <div class="container"><?php get_footer(); ?></div>
