@@ -181,9 +181,54 @@
                 <div class="featured-right">
 
                     <div id="carouselExampleControls" class="carousel carousel-dark" data-bs-ride="carousel">
-
+                        <?php
+                        $loop = new WP_Query(
+                            array(
+                                'post_type' => 'product',
+                                'tax_query' => array(
+                                    array(
+                                        'taxonomy' => 'product_visibility',
+                                        'field' => 'name',
+                                        'terms' => 'featured',
+                                    ),
+                                ),
+                                'posts_per_page' => 4,
+                                'orderby' => 'menu_order',
+                                'order' => 'ASC',
+                            )
+                        );
+                        ?>
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
+                            <?php
+                            while ($loop->have_posts()):
+                                $loop->the_post(); ?>
+                                <div class="carousel-item active">
+                                    <div class="card">
+                                        <div class="img-wrapper">
+                                            <?php the_post_thumbnail("thumbnail-268x268"); ?>
+                                        </div>
+                                        <div class="card-body">
+                                            <h4>
+                                                <span href="<?php the_permalink(); ?>" class="product_block_name">
+                                                    <?php the_title(); ?>
+                                                </span>
+                                            </h4>
+                                            <div class="product_block_price">
+                                                <div class="price_value">
+                                                    <span class="actual_price">
+                                                        <?php woocommerce_template_loop_price(); ?>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <?php woocommerce_template_loop_add_to_cart(); ?>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            <?php endwhile;
+                            wp_reset_postdata();
+                            ?>
+                            <!-- <div class="carousel-item active">
                                 <div class="card">
                                     <div class="img-wrapper"><img
                                             src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-1-card-2.jpg"
@@ -200,8 +245,9 @@
                                             subscribe to Coding Yaar."</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="carousel-item">
+                            </div> -->
+
+                            <!-- <div class="carousel-item">
                                 <div class="card">
                                     <div class="img-wrapper"><img
                                             src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-1-card-2.jpg"
@@ -327,6 +373,24 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="img-wrapper"><img
+                                            src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-1-card-2.jpg"
+                                            class="d-block w-100" alt="..."> </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 9</h5>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                                        <p class="card-text">"Some dummy text you don't need to read.
+                                            Since you have decided to read, do like, share, comment and
+                                            subscribe to Coding Yaar."</p>
+                                    </div>
+                                </div>
+                            </div> -->
                         </div>
 
 
