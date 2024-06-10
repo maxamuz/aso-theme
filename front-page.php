@@ -1,22 +1,20 @@
 <?php get_header(); ?>
 
-<div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false"
-    data-bs-pause="hover">
+<div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bs-pause="hover">
     <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
         <?php $fields = CFS()->get('slider'); ?>
 
-        <?php if (!empty($fields)): ?>
+        <?php if (!empty($fields)) : ?>
 
             <?php $i = 0;
-            foreach ($fields as $field): ?>
+            foreach ($fields as $field) : ?>
                 <div class="carousel-item<?php if ($i === 0)
-                    echo ' active'; ?>" data-bs-interval="10000">
+                                                echo ' active'; ?>" data-bs-interval="10000">
                     <div class="main-slider_slide main-slider_slide--vint">
                         <div class="container slider-container">
                             <div class="row">
@@ -29,13 +27,14 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="img-container"><?php echo $field['img']; ?></div>
+                                    <div class="img-container"><img src="<?php echo $field['img']; ?>"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <?php $i++; endforeach; ?>
+            <?php $i++;
+            endforeach; ?>
         <?php endif; ?>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -61,8 +60,7 @@
                                 циклических работ</p>
                         </div>
                         <div class="group_item_image">
-                            <img
-                                src="https://asobezh-msk.ru/wp-content/themes/aco-child/src/img/cats-on-main/xporsh2.png.pagespeed.ic.tSX51ykQEG.webp">
+                            <img src="https://asobezh-msk.ru/wp-content/themes/aco-child/src/img/cats-on-main/xporsh2.png.pagespeed.ic.tSX51ykQEG.webp">
                         </div>
                     </a>
                 </div>
@@ -76,8 +74,7 @@
                                 масштабах</p>
                         </div>
                         <div class="group_item_image">
-                            <img
-                                src="https://asobezh-msk.ru/wp-content/themes/aco-child/src/img/cats-on-main/xvint2.png.pagespeed.ic.Kjxv5JWINs.webp">
+                            <img src="https://asobezh-msk.ru/wp-content/themes/aco-child/src/img/cats-on-main/xvint2.png.pagespeed.ic.Kjxv5JWINs.webp">
                         </div>
                     </a>
                 </div>
@@ -91,8 +88,7 @@
                                 площади</p>
                         </div>
                         <div class="group_item_image">
-                            <img
-                                src="https://asobezh-msk.ru/wp-content/themes/aco-child/src/img/cats-on-main/xresiver2.png.pagespeed.ic.lnF0ZZM6Ta.webp">
+                            <img src="https://asobezh-msk.ru/wp-content/themes/aco-child/src/img/cats-on-main/xresiver2.png.pagespeed.ic.lnF0ZZM6Ta.webp">
                         </div>
                     </a>
                 </div>
@@ -107,8 +103,7 @@
                         </div>
                         <div class="group_item_short-desc"></div>
                         <div class="group_item_image">
-                            <img
-                                src="https://asobezh-msk.ru/wp-content/themes/aco-child/src/img/cats-on-main/xpeskostruika2.png.pagespeed.ic.5aDltOxcj2.webp">
+                            <img src="https://asobezh-msk.ru/wp-content/themes/aco-child/src/img/cats-on-main/xpeskostruika2.png.pagespeed.ic.5aDltOxcj2.webp">
                         </div>
                     </a>
                 </div>
@@ -200,7 +195,7 @@
                         ?>
                         <div class="carousel-inner">
                             <?php
-                            while ($loop->have_posts()):
+                            while ($loop->have_posts()) :
                                 $loop->the_post(); ?>
                                 <div class="carousel-item active">
                                     <div class="card">
@@ -208,19 +203,57 @@
                                             <?php the_post_thumbnail("thumbnail-268x268"); ?>
                                         </div>
                                         <div class="card-body">
-                                            <h4>
-                                                <span href="<?php the_permalink(); ?>" class="product_block_name">
-                                                    <?php the_title(); ?>
-                                                </span>
-                                            </h4>
-                                            <div class="product_block_price">
-                                                <div class="price_value">
-                                                    <span class="actual_price">
-                                                        <?php woocommerce_template_loop_price(); ?>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <?php woocommerce_template_loop_add_to_cart(); ?>
+
+                                            <span href="<?php the_permalink(); ?>" class="product_block_name">
+                                                <?php the_title(); ?>
+                                            </span>
+
+                                            <ul class="product_block_props">
+                                                <li>Производительность: <?php the_field('production'); ?> л/мин.</li>
+                                                <li>Давление: <?php the_field('pressure'); ?> бар</li>
+                                                <li>Мощность: <?php the_field('power'); ?> кВт</li>
+                                            </ul>
+
+                                            <?php
+
+                                            if ($price = $product->get_price_html()) {
+                                                echo '<div class="product_block_price">
+    <div class="price_value">
+    <span class="actual_price">' . $price = $product->get_price_html() . '</span>
+    <a href="#order-form_pop" class="product_block_get-discount">
+    <span class="button-body">Запросить скидку</span>
+    </a>
+    </div>
+    </div>';
+                                                echo '<a href="/product/kompressor-aso-vk-37-8-2/" class="product_block_button">
+        <span class="button-icon--left br-white">
+            <span class="fa-stack fa-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-folder2-open" viewBox="0 0 16 16">
+            <path d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v.64c.57.265.94.876.856 1.546l-.64 5.124A2.5 2.5 0 0 1 12.733 15H3.266a2.5 2.5 0 0 1-2.481-2.19l-.64-5.124A1.5 1.5 0 0 1 1 6.14V3.5zM2 6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3H2.5a.5.5 0 0 0-.5.5V6zm-.367 1a.5.5 0 0 0-.496.562l.64 5.124A1.5 1.5 0 0 0 3.266 14h9.468a1.5 1.5 0 0 0 1.489-1.314l.64-5.124A.5.5 0 0 0 14.367 7H1.633z"/>
+          </svg>
+            </span>
+        </span>
+        <span class="button-body">Подробнее</span>
+    </a>';
+                                            } else {
+                                                echo '<div class="price_value">
+    <span class="no_price">Цена по запросу</span>
+    </div>';
+                                                echo '<a href="/product/kompressor-aso-vk-37-8-2/" class="product_block_button">
+    <span class="button-icon--left br-white">
+        <span class="fa-stack fa-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-folder2-open" viewBox="0 0 16 16">
+        <path d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v.64c.57.265.94.876.856 1.546l-.64 5.124A2.5 2.5 0 0 1 12.733 15H3.266a2.5 2.5 0 0 1-2.481-2.19l-.64-5.124A1.5 1.5 0 0 1 1 6.14V3.5zM2 6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3H2.5a.5.5 0 0 0-.5.5V6zm-.367 1a.5.5 0 0 0-.496.562l.64 5.124A1.5 1.5 0 0 0 3.266 14h9.468a1.5 1.5 0 0 0 1.489-1.314l.64-5.124A.5.5 0 0 0 14.367 7H1.633z"/>
+      </svg>
+        </span>
+    </span>
+    <span class="button-body">Подробнее</span>
+</a>';
+                                            }
+
+                                            ?>
+
+
                                         </div>
                                     </div>
                                 </div>
@@ -394,13 +427,11 @@
                         </div>
 
 
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>

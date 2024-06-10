@@ -211,11 +211,11 @@ add_action('woocommerce_after_shop_loop_item_title', 'woocommerce_product_block_
 
 function woocommerce_product_block_props()
 {
-	echo '<ul class="product_block_props">
-	<li>Производительность: 6.5 м³/мин</li
-	<li>Давление: 8 бар</li>
-	<li>Мощность: 37 кВт</li>	
-    </ul>';
+	echo '<ul class="product_block_props">';
+	echo '<li>Производительность: ',  the_field('production'), ' л/мин</li>';
+	echo '<li>Давление: ',  the_field('pressure'), ' бар</li>';
+	echo '<li>Мощность: ',  the_field('power'), ' кВт</li>';
+	echo '</ul>';
 }
 
 remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10);

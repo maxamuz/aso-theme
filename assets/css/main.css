@@ -403,7 +403,8 @@ p.description-text {
 }
 
 .featured_left img {
-  width: 275px;
+  width: 287px;
+  max-width: none;
 }
 
 .featured-right {
@@ -454,6 +455,24 @@ p.description-text {
   }
 }
 
+.card .img-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.card-body .product_block_name {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.card .img-wrapper img {
+  max-width: 74%;
+}
+
 /* --- Featured Slider End --- */
 
 /*--- Block Featured End ---*/
@@ -490,7 +509,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 320px;
+  max-width: 308px;
   min-width: 290px;
   min-height: 480px;
   width: 100%;
