@@ -390,7 +390,7 @@ p.description-text {
 
 .featured-container {
   display: flex;
-  padding-bottom: 40px;
+  padding-bottom: 90px;
 }
 
 .featured-after {
@@ -664,6 +664,58 @@ main {
 }
 
 /*--- Block Product Card End ---*/
+
+/*--- Block News Start ---*/
+
+.section {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+.section>* {
+  margin-right: 15px;
+}
+
+.section_news {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  justify-content: start;
+}
+
+.section_left {
+  height: 100%;
+  position: relative;
+  max-width: 325px;
+  flex: 1 0 275px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.section_left img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.section_right {
+  /* max-width: 800px; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.section_content--column {
+  display: flex;
+  flex-direction: row;
+}
+
+/*--- Block News End ---*/
 
 /*---   Media ---*/
 

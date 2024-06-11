@@ -444,5 +444,35 @@
                 </div>
             </div>
 </section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="section_headline section_headline_news">Новости компании</div>
+            <div class="col-24 section section_news">
+                <div class="section_left">
+                    <img src="/wp-content/themes/aco-child/src/img/brand-bej-image-02-s.jpg">
+                </div>
+                <div class="section_right">
 
+
+                    <div class="section_content--column">
+                        <?php query_posts('cat=1&posts_per_page=3');
+                        while (have_posts()) : the_post(); ?>
+                            <div class="main-page_news">
+                                <div class="main-page_news_content">
+                                    <img src="<?php the_post_thumbnail_url(); ?>" class="my-thumb-class" alt="Image forНовинки Бежецкого завода АСО">
+                                    <div class="main-page_news_content_text">
+                                        <p class="main-page_news_content_headline"><a href="<?php the_permalink(); ?>" class="content_header"><?php the_title(); ?></a></p>
+                                        <p><?php the_excerpt(); ?></p>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endwhile; ?>
+                        <?php wp_reset_query(); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <div class="container"><?php get_footer(); ?></div>
