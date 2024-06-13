@@ -212,9 +212,9 @@ add_action('woocommerce_after_shop_loop_item_title', 'woocommerce_product_block_
 function woocommerce_product_block_props()
 {
 	echo '<ul class="product_block_props">';
-	echo '<li>Производительность: ',  the_field('production'), ' л/мин</li>';
-	echo '<li>Давление: ',  the_field('pressure'), ' бар</li>';
-	echo '<li>Мощность: ',  the_field('power'), ' кВт</li>';
+	echo '<li>Производительность: ', the_field('production'), ' л/мин</li>';
+	echo '<li>Давление: ', the_field('pressure'), ' бар</li>';
+	echo '<li>Мощность: ', the_field('power'), ' кВт</li>';
 	echo '</ul>';
 }
 
@@ -287,3 +287,11 @@ function add_new_menu_item($nav, $args)
 	$nav = $newmenuitem . $nav;
 	return $nav;
 }
+
+add_filter('excerpt_length', function () {
+	return 15;
+});
+
+add_filter('excerpt_more', function ($more) {
+	return '...';
+});

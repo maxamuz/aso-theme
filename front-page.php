@@ -1,20 +1,22 @@
 <?php get_header(); ?>
 
-<div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bs-pause="hover">
+<div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false"
+    data-bs-pause="hover">
     <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
         <?php $fields = CFS()->get('slider'); ?>
 
-        <?php if (!empty($fields)) : ?>
+        <?php if (!empty($fields)): ?>
 
             <?php $i = 0;
-            foreach ($fields as $field) : ?>
+            foreach ($fields as $field): ?>
                 <div class="carousel-item<?php if ($i === 0)
-                                                echo ' active'; ?>" data-bs-interval="10000">
+                    echo ' active'; ?>" data-bs-interval="10000">
                     <div class="main-slider_slide main-slider_slide--vint">
                         <div class="container slider-container">
                             <div class="row">
@@ -33,7 +35,7 @@
                         </div>
                     </div>
                 </div>
-            <?php $i++;
+                <?php $i++;
             endforeach; ?>
         <?php endif; ?>
     </div>
@@ -60,7 +62,8 @@
                                 циклических работ</p>
                         </div>
                         <div class="group_item_image">
-                            <img src="https://asobezh-msk.ru/wp-content/themes/aco-child/src/img/cats-on-main/xporsh2.png.pagespeed.ic.tSX51ykQEG.webp">
+                            <img
+                                src="https://asobezh-msk.ru/wp-content/themes/aco-child/src/img/cats-on-main/xporsh2.png.pagespeed.ic.tSX51ykQEG.webp">
                         </div>
                     </a>
                 </div>
@@ -74,7 +77,8 @@
                                 масштабах</p>
                         </div>
                         <div class="group_item_image">
-                            <img src="https://asobezh-msk.ru/wp-content/themes/aco-child/src/img/cats-on-main/xvint2.png.pagespeed.ic.Kjxv5JWINs.webp">
+                            <img
+                                src="https://asobezh-msk.ru/wp-content/themes/aco-child/src/img/cats-on-main/xvint2.png.pagespeed.ic.Kjxv5JWINs.webp">
                         </div>
                     </a>
                 </div>
@@ -88,7 +92,8 @@
                                 площади</p>
                         </div>
                         <div class="group_item_image">
-                            <img src="https://asobezh-msk.ru/wp-content/themes/aco-child/src/img/cats-on-main/xresiver2.png.pagespeed.ic.lnF0ZZM6Ta.webp">
+                            <img
+                                src="https://asobezh-msk.ru/wp-content/themes/aco-child/src/img/cats-on-main/xresiver2.png.pagespeed.ic.lnF0ZZM6Ta.webp">
                         </div>
                     </a>
                 </div>
@@ -103,7 +108,8 @@
                         </div>
                         <div class="group_item_short-desc"></div>
                         <div class="group_item_image">
-                            <img src="https://asobezh-msk.ru/wp-content/themes/aco-child/src/img/cats-on-main/xpeskostruika2.png.pagespeed.ic.5aDltOxcj2.webp">
+                            <img
+                                src="https://asobezh-msk.ru/wp-content/themes/aco-child/src/img/cats-on-main/xpeskostruika2.png.pagespeed.ic.5aDltOxcj2.webp">
                         </div>
                     </a>
                 </div>
@@ -195,12 +201,12 @@
                         ?>
                         <div class="carousel-inner">
                             <?php
-                            while ($loop->have_posts()) :
+                            while ($loop->have_posts()):
                                 $loop->the_post(); ?>
                                 <div class="carousel-item active">
                                     <div class="card">
                                         <div class="img-wrapper">
-                                            <?php the_post_thumbnail("thumbnail-268x268"); ?>
+                                            <?php the_post_thumbnail(); ?>
                                         </div>
                                         <div class="card-body">
 
@@ -427,11 +433,13 @@
                         </div>
 
 
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
@@ -457,12 +465,15 @@
 
                     <div class="section_content--column">
                         <?php query_posts('cat=1&posts_per_page=3');
-                        while (have_posts()) : the_post(); ?>
+                        while (have_posts()):
+                            the_post(); ?>
                             <div class="main-page_news">
                                 <div class="main-page_news_content">
-                                    <img src="<?php the_post_thumbnail_url(); ?>" class="my-thumb-class" alt="Image forНовинки Бежецкого завода АСО">
+                                    <img src="<?php the_post_thumbnail_url(); ?>" class="my-thumb-class"
+                                        alt="Image forНовинки Бежецкого завода АСО">
                                     <div class="main-page_news_content_text">
-                                        <p class="main-page_news_content_headline"><a href="<?php the_permalink(); ?>" class="content_header"><?php the_title(); ?></a></p>
+                                        <p class="main-page_news_content_headline"><a href="<?php the_permalink(); ?>"
+                                                class="content_header"><?php the_title(); ?></a></p>
                                         <p><?php the_excerpt(); ?></p>
                                     </div>
                                 </div>
