@@ -872,6 +872,23 @@ input.order-form_input {
 
 /*--- Block Form End ---*/
 
+/*--- Footer Start ---*/
+
+.footer_contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_contact_link {
+  display: flex;
+}
+
+.header_contact_link_icon {
+  margin-right: 10px;
+}
+
+/*--- Footer End ---*/
+
 /*---   Media ---*/
 
 @media (min-width: 1260px) {
