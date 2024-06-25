@@ -29,7 +29,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="img-container"><img src="<?php echo $field['img']; ?>"></div>
+                                    <div class="img-container"><?php echo $field['img']; ?></div>
                                 </div>
                             </div>
                         </div>
